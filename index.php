@@ -6,13 +6,18 @@
     Scrive l'Accademia: 'Gurnah ha pubblicato dieci romanzi e molte raccolte di racconti. In tutti i suoi lavori ricorre il tema dei rifugiati. Ha iniziato a scrivere a 21 anni mentre era in esilio in Inghilterra e nonostante il Swahili fosse la sua prima lingua, presto l'inglese è divento la sua scelta letteraria. La lingua letteraria della tradizione inglese da Shakespeare a V.S. Naipaul ha molto influenzato il suo lavoro. Un'opera nella quale lo scrittore sa però rompere la convenzione mettendo fine alla prospettiva coloniale valorizzando quella delle popolazioni indigene'.
     Tra i suoi romanzi più noti Desertion (2005) tradotto in Italia l'anno dopo da Garzanti con il titolo Il disertore, una storia che narra l'incontro tra un inglese, studioso dell'oriente, e un africano che lo salva nel deserto. Il suo romanzo di esordio è Memory of Departure del 1987, ambientato in Africa racconta un'insurrezione fallita. In Italia sono stati pubblicati da Garzanti tre suoi romanzi: oltre a Il disertore, Paradiso (2007) e Sulla riva del mare (2002). La casa editrice milanese sta ora pensando alla loro ristampa.
     Da quando il Nobel per la letteratura è stato istituito nel 1901, Gurnah è il quinto autore africano a vincerlo, dopo Wole Soyinka (Nigeria, 1986), Naguib Mahfouz (Egitto, 1988), Nadine Gordimer (Sudafrica, 1991) e John Maxwell Coetzee (Sudafrica, 2003).
-    Appena contattato al telefono poco prima dell'annuncio ufficiale Gurnah era stupito: 'Ho pensato che fosse uno scherzo', ha detto. 'È stata una tale sorpresa che ho aspettato fino a quando l'ho sentito annunciare prima di poterci credere'. Le prime dichiarazioni sono state sul dramma dei migranti: 'Sono arrivato in Inghilterra quando espressioni come 'richiedente asilo' non erano le stesse: oggi sempre più persone stanno lottando e scappando dagli stati terroristici. Molte di queste persone fuggono per necessità'."
+    Appena contattato al telefono poco prima dell'annuncio ufficiale Gurnah era stupito: 'Ho pensato che fosse uno scherzo', ha detto. 'È stata una tale sorpresa che ho aspettato fino a quando l'ho sentito annunciare prima di poterci credere'. Le prime dichiarazioni sono state sul dramma dei migranti: 'Sono arrivato in Inghilterra quando espressioni come 'richiedente asilo' non erano le stesse: oggi sempre più persone stanno lottando e scappando dagli stati terroristici. Molte di queste persone fuggono per necessità'.";
     
+    $articleTitle = "Abdulrazak Gurnah è il Premio Nobel per la letteratura 2021"
 
 ?>
 
 <html>
-    <h2>Abdulrazak Gurnah è il Premio Nobel per la letteratura 2021</h2>
+    <h2>
+        <?php
+            echo $articleTitle;
+        ?>
+    </h2>
     <p>
         <?php
             echo $article;
@@ -33,7 +38,11 @@
        " <?php echo $_GET["badword"]; ?> " è una parola proibita!
     </h1>
     <hr>
-    <h2>Abdulrazak Gurnah è il Premio Nobel per la letteratura 2021</h2>
+    <h2>
+        <?php
+            echo $articleTitle;
+        ?>
+    </h2>
     <p>
         <?php
             echo str_replace($_GET["badword"],"***",$article);
